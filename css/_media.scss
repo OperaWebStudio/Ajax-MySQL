@@ -1,0 +1,133 @@
+@media only screen and (min-width: 568px){
+  input.form-control{
+    max-width: 80%;
+  }
+  footer{
+    text-align: initial;
+  }
+  .footer__logo {
+    margin: 30px 10px;
+  }
+  .socials{
+    display: inline-block;
+    float: right;
+  }
+}
+@media only screen and (min-width: 768px){
+  .logo{
+    img{
+      width: 350px;
+    }
+  }
+  .icon{
+    width: 200px;
+    margin: 50px auto 30px;
+  }
+  #myForm{
+    .form-control{
+      margin-bottom: 60px;
+      padding: 0 40px;
+      font: $RR29;
+      &:not(#message){
+        height: 80px;
+      }
+    }
+    label{
+      margin-bottom: 20px;
+      &:after{
+        top: -12px;
+        right: -35px;
+        font-size: 40px;
+      }
+    }
+    input.form-control{
+      max-width: 546px;
+    }
+    #message {
+      padding: 20px 40px !important;
+    }
+    button{
+      margin: 70px 0 0;
+      padding: 25px 30px;
+      font: $RB38;
+    }
+  }
+
+  #outputData{
+    padding-bottom: 80px;
+  }
+  h1{
+    margin: 100px 0;
+  }
+  #cards{
+    margin: 0 0 165px;
+    .card{
+      width: 378px;
+      max-width: 320px;
+      height: 465px;
+      margin-bottom: 80px;
+      padding: 90px 38px 38px;
+      p{
+        padding: 50px 0 0;
+        &:first-child{
+          height: 100px;
+          padding: 30px;
+          font: $RM38;
+        }
+        &:nth-child(2){
+          font: $RB38;
+        }
+        &:last-child{
+          font: $RM34;
+        }
+      }
+    }
+    //even
+    > div:nth-child(2n) > div{
+      p{
+        &:last-child{
+          font: $RR34;
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 996px){
+  #cards{
+    .card{
+      max-width: 300px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .container{
+    width: 100%;
+    max-width: 1370px;
+  }
+  .icon{
+    width: 320px;
+    margin: 85px auto 35px;
+  }
+  #myForm{
+    label{
+      font: $RM38;
+      &:after{
+        top: -3px;
+        font-size: 50px;
+      }
+    }
+  }
+  h1{
+    font: $RM50;
+    margin: 155px 0 145px;
+  }
+  header{
+    padding: 60px 0 115px;
+  }
+  #cards{
+    .card{
+      max-width: 378px;
+    }
+  }
+}

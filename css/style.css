@@ -1,0 +1,233 @@
+body {
+  max-width: 1920px; }
+
+h1 {
+  font: 500 38px/1.2 Roboto Medium, sans-serif;
+  margin: 50px 0; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+/* header*/
+header {
+  padding: 30px 0 50px;
+  background-color: #2d3136;
+  color: #d7d7d7; }
+
+.logo {
+  display: inline-block; }
+  .logo img {
+    width: 290px;
+    height: auto; }
+
+.icon {
+  width: 150px;
+  height: auto;
+  margin: 40px auto; }
+
+/* form */
+#myForm .form-control {
+  margin-bottom: 20px;
+  background-color: #2f3338;
+  color: #d7d7d7;
+  border: 1px solid #45494d;
+  padding: 0 20px;
+  font: 400 18px/1.2 Roboto Regular, sans-serif; }
+  #myForm .form-control:not(#message) {
+    height: 40px; }
+#myForm label {
+  position: relative;
+  margin-bottom: 10px;
+  font: 500 24px/1.2 Roboto Medium, sans-serif; }
+  #myForm label:after {
+    content: '\002A';
+    position: absolute;
+    top: -3px;
+    right: -20px;
+    color: #be393b;
+    font-size: 30px; }
+#myForm #message {
+  padding: 5px 20px !important; }
+#myForm button {
+  margin: 20px auto;
+  float: right;
+  padding: 10px;
+  font: 500 24px/1.2 Roboto Medium, sans-serif;
+  background-color: #be393b;
+  color: #FFF;
+  border: none; }
+
+/* success/fail */
+#result {
+  position: relative; }
+
+#success_message {
+  position: absolute;
+  width: 100%;
+  z-index: 10; }
+
+/* output section */
+#outputData {
+  text-align: center;
+  background-color: #f6f6f7;
+  padding-bottom: 50px; }
+
+/* cards */
+#cards {
+  margin: 0 0 30px; }
+  #cards .card {
+    position: relative;
+    max-width: 290px;
+    width: 100%;
+    height: 270px;
+    overflow: auto;
+    margin: 0 auto 30px;
+    padding: 20px 10px 20px;
+    background-color: #e9eef3;
+    color: #78847A; }
+    #cards .card p {
+      padding: 50px 0 0;
+      word-wrap: normal; }
+      #cards .card p:first-child {
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        font: 500 24px/1.2 Roboto Medium, sans-serif;
+        color: #FFF;
+        background-color: #4b596c;
+        overflow: hidden; }
+      #cards .card p:nth-child(2) {
+        font: 700 24px/1.2 Roboto Bold, sans-serif;
+        word-wrap: break-word; }
+      #cards .card p:last-child {
+        font: 500 18px/1.2 Roboto Medium, sans-serif; }
+  #cards > div:nth-child(2n) > div {
+    background-color: #deebde; }
+    #cards > div:nth-child(2n) > div p:first-child {
+      background-color: #58ad52; }
+    #cards > div:nth-child(2n) > div p:nth-child(2) {
+      color: #58ad52; }
+    #cards > div:nth-child(2n) > div p:last-child {
+      font: 400 18px/1.2 Roboto Regular, sans-serif; }
+
+/* footer */
+footer {
+  background-color: #2a2d33;
+  text-align: center; }
+  footer a {
+    display: inline-block; }
+
+.footer__logo {
+  max-width: 284px;
+  height: auto;
+  margin-top: 30px; }
+
+.socials {
+  text-align: center; }
+  .socials a {
+    margin: 30px 10px; }
+  .socials img {
+    max-width: 57px;
+    height: auto; }
+
+/* media queries */
+@media only screen and (min-width: 568px) {
+  input.form-control {
+    max-width: 80%; }
+
+  footer {
+    text-align: initial; }
+
+  .footer__logo {
+    margin: 30px 10px; }
+
+  .socials {
+    display: inline-block;
+    float: right; } }
+@media only screen and (min-width: 768px) {
+  .logo img {
+    width: 350px; }
+
+  .icon {
+    width: 200px;
+    margin: 50px auto 30px; }
+
+  #myForm .form-control {
+    margin-bottom: 60px;
+    padding: 0 40px;
+    font: 400 29px/1.2 Roboto Regular, sans-serif; }
+    #myForm .form-control:not(#message) {
+      height: 80px; }
+  #myForm label {
+    margin-bottom: 20px; }
+    #myForm label:after {
+      top: -12px;
+      right: -35px;
+      font-size: 40px; }
+  #myForm input.form-control {
+    max-width: 546px; }
+  #myForm #message {
+    padding: 20px 40px !important; }
+  #myForm button {
+    margin: 70px 0 0;
+    padding: 25px 30px;
+    font: 700 38px/1.2 Roboto Bold, sans-serif; }
+
+  #outputData {
+    padding-bottom: 80px; }
+
+  h1 {
+    margin: 100px 0; }
+
+  #cards {
+    margin: 0 0 165px; }
+    #cards .card {
+      width: 378px;
+      max-width: 320px;
+      height: 465px;
+      margin-bottom: 80px;
+      padding: 90px 38px 38px; }
+      #cards .card p {
+        padding: 50px 0 0; }
+        #cards .card p:first-child {
+          height: 100px;
+          padding: 30px;
+          font: 500 38px/1.2 Roboto Medium, sans-serif; }
+        #cards .card p:nth-child(2) {
+          font: 700 38px/1.2 Roboto Bold, sans-serif; }
+        #cards .card p:last-child {
+          font: 500 34px/1.2 Roboto Medium, sans-serif; }
+    #cards > div:nth-child(2n) > div p:last-child {
+      font: 400 34px/1.2 Roboto Regular, sans-serif; } }
+@media only screen and (min-width: 996px) {
+  #cards .card {
+    max-width: 300px; } }
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1370px; }
+
+  .icon {
+    width: 320px;
+    margin: 85px auto 35px; }
+
+  #myForm label {
+    font: 500 38px/1.2 Roboto Medium, sans-serif; }
+    #myForm label:after {
+      top: -3px;
+      font-size: 50px; }
+
+  h1 {
+    font: 500 50px/1.2 Roboto Medium, sans-serif;
+    margin: 155px 0 145px; }
+
+  header {
+    padding: 60px 0 115px; }
+
+  #cards .card {
+    max-width: 378px; } }
